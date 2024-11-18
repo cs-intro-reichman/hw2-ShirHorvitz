@@ -1,8 +1,8 @@
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-	    String word = args[0];
-            String includesAn = "AaEeFfHhIiLlMmNnOoRrSsXx";
+	    String word = args[0].toUpperCase();
+            String includesAn = "AEFHILMNORSX";
             int times = Integer.parseInt(args[1]);
 
             for (int i = 0; i < word.length(); i++) {
