@@ -5,11 +5,11 @@ public class Collatz {
 		String mood = args[1];
 
 		for (int i = 1; i <= n; i++) {
-			int steps = 1;
 			int newnum = i;
 			String result = newnum + " ";
 
-			while (newnum != 1) {
+			int steps = 1;
+			while (newnum != 1 || steps == 1) {
 				if (newnum % 2 == 0) {
 					newnum = newnum /2;
 				} else {
